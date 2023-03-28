@@ -1,4 +1,3 @@
-import axios from "axios";
 import { API, BASE_URL } from "./constant.api";
 
 // export const LoginApi = (email, password) => {

@@ -4,13 +4,22 @@ import "normalize.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import GlobalStyles from "./components/global-styles/GlobalStyles";
+import { BrowserRouter, ScrollRestoration } from "react-router-dom";
+import { Provider } from "react-redux";
+import { rootStore } from "./store";
+import ScrollToTop from "./components/ScrollToTop";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <GlobalStyles>
-      <App />
-    </GlobalStyles>
+    <Provider store={rootStore}>
+      <BrowserRouter>
+        <GlobalStyles>
+          <App />
+        </GlobalStyles>
+        <ScrollToTop />
+      </BrowserRouter>
+    </Provider>
   </React.StrictMode>
 );
 
