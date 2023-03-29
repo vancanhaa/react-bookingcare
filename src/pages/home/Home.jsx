@@ -1,13 +1,11 @@
 import React from "react";
-import { Route, Routes } from "react-router";
-import { ROUTE } from "../../constants";
-import Login from "../login/Login";
+import HomeHeader from "./home-header/HomeHeader";
 import "./home.scss";
 
 function Home() {
   return (
     <div>
-      <h1>Home</h1>
+      <HomeHeader />
     </div>
   );
 }

@@ -1,4 +1,4 @@
-export const languages = {
+export const LANGUAGES = {
   VI: "vi",
   EN: "en",
 };

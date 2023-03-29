@@ -8,16 +8,19 @@ import { BrowserRouter, ScrollRestoration } from "react-router-dom";
 import { Provider } from "react-redux";
 import { rootStore } from "./store";
 import ScrollToTop from "./components/ScrollToTop";
+import IntlProviderWrapper from "./hoc/IntlProviderWrapper";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Provider store={rootStore}>
       <BrowserRouter>
-        <GlobalStyles>
-          <App />
-        </GlobalStyles>
-        <ScrollToTop />
+        <IntlProviderWrapper>
+          <GlobalStyles>
+            <App />
+          </GlobalStyles>
+          <ScrollToTop />
+        </IntlProviderWrapper>
       </BrowserRouter>
     </Provider>
   </React.StrictMode>

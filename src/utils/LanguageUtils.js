@@ -24,14 +24,12 @@ const messages = {
   en: flattenMessages(messages_en),
 };
 
-export const LanguageUtils = () => {
-  return {
-    getMessageByKey: (key, lang) => {
-      return messages[lang][key];
-    },
+export const LanguageUtils = {
+  getMessageByKey: (key, lang) => {
+    return messages[lang][key];
+  },
 
-    getFlattenedMessages: () => {
-      return messages;
-    },
-  };
+  getFlattenedMessages: () => {
+    return messages;
+  },
 };
