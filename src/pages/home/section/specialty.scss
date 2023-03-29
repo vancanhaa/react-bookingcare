@@ -2,14 +2,85 @@
   height: 330px;
   background-color: #f5f5f5;
   border: 1px solid red;
-}
-//reset slick slider css
-.slick-prev {
-  border: 1px solid green;
-  position: relative !important;
-  left: 0 !important;
-}
-.slick-next {
-  border: 1px solid red;
-  right: 0 !important;
+  .specialty-container {
+    margin: 0 100px;
+    display: flex;
+    flex-direction: column;
+    .specialty-header {
+      height: 60px;
+      margin-bottom: 30px;
+      padding-top: 30px;
+      .title-section {
+        font-size: 22px;
+        font-weight: 600;
+      }
+      .btn-section {
+        float: right;
+        padding: 10px 15px;
+        border: none;
+        outline: none;
+        display: block;
+        background-color: #ebebeb;
+        color: black;
+        text-transform: uppercase;
+        &:hover {
+          cursor: pointer;
+          color: #fff;
+          background: #f7d800;
+        }
+      }
+    }
+    .specialty-body {
+      .specialty-customize {
+        .bg-image-wrap {
+          height: 160px;
+          padding: 5px;
+          .bg-image {
+            width: 90%;
+            height: 150px;
+            background: url("../../../assets/specialty/co-xuong-khop.jpg") fixed;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: #eee;
+            margin: 0 auto;
+          }
+        }
+        .specialty-customize__title {
+          padding-left: calc(5% + 5px);
+        }
+      }
+      //reset slick css
+      .slick-list {
+        margin: 0 -1% !important;
+      }
+      .slick-prev {
+        left: -10px !important;
+        z-index: 1000 !important;
+        height: 48px !important;
+        width: 44px !important;
+        background: #fff !important;
+        border: 2px solid #d7d7d7 !important;
+        &:hover {
+          background: #eceaea !important;
+        }
+      }
+      .slick-prev::before,
+      .slick-next:before {
+        font-family: FontAwesome !important;
+        color: red !important;
+      }
+      .slick-next {
+        right: -10px !important;
+        z-index: 1000 !important;
+        height: 48px !important;
+        width: 44px !important;
+        background: #fff !important;
+        border: 2px solid #d7d7d7 !important;
+        &:hover {
+          background: #eceaea !important;
+        }
+      }
+    }
+  }
 }
