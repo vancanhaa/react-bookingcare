@@ -1,0 +1,23 @@
+.section-share.section-outstanding-doctor {
+  background-color: #fff;
+  .section-body {
+    .section-customize-wrap {
+      .section-customize {
+        border: 1px solid orange;
+        .bg-image-wrap {
+          margin-top: 10px;
+          height: 130px;
+          .bg-image {
+            width: 130px;
+            height: 130px;
+            background-image: url("../../../../assets/outstanding-doctor/bac-si-1.jpg");
+            border-radius: 50%;
+          }
+        }
+        .section-customize__title {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
