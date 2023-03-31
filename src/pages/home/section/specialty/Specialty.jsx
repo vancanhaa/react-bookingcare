@@ -1,7 +1,9 @@
 import React from "react";
 import Slider from "react-slick";
 import "./specialty.scss";
-
+import { Link } from "react-router-dom";
+import { ROUTE } from "../../../../constants/route.constant";
+import coXuongKhop from "../../../../assets/specialty/co-xuong-khop.jpg";
 function Specialty({ settings }) {
   return (
     <div className="section-share section-specialty">
@@ -12,69 +14,69 @@ function Specialty({ settings }) {
         </div>
         <div className="section-body">
           <Slider {...settings}>
-            <div className="section-customize-wrap">
-              <div className="section-customize">
-                <div className="bg-image-wrap">
-                  <div className="bg-image section-specialty"></div>
+            <div className="section-customize">
+              <Link to={ROUTE.SPECIALTY} className="section-customize__link">
+                <div className="section-customize__image">
+                  <img src={coXuongKhop} alt="" />
                 </div>
-                <div className="section-customize__title">Cơ xương khớp 1</div>
-              </div>
+                <h4 className="section-customize__title">Cơ xương khớp 1</h4>
+              </Link>
             </div>
-            <div className="section-customize-wrap">
-              <div className="section-customize">
-                <div className="bg-image-wrap">
-                  <div className="bg-image section-specialty"></div>
+            <div className="section-customize">
+              <Link to={ROUTE.SPECIALTY} className="section-customize__link">
+                <div className="section-customize__image">
+                  <img src={coXuongKhop} alt="" />
                 </div>
-                <div className="section-customize__title">Cơ xương khớp 1</div>
-              </div>
+                <h4 className="section-customize__title">Cơ xương khớp 1</h4>
+              </Link>
             </div>
-            <div className="section-customize-wrap">
-              <div className="section-customize">
-                <div className="bg-image-wrap">
-                  <div className="bg-image section-specialty"></div>
+            <div className="section-customize">
+              <Link to={ROUTE.SPECIALTY} className="section-customize__link">
+                <div className="section-customize__image">
+                  <img src={coXuongKhop} alt="" />
                 </div>
-                <div className="section-customize__title">Cơ xương khớp 1</div>
-              </div>
+                <h4 className="section-customize__title">Cơ xương khớp 1</h4>
+              </Link>
             </div>
-            <div className="section-customize-wrap">
-              <div className="section-customize">
-                <div className="bg-image-wrap">
-                  <div className="bg-image section-specialty"></div>
+            <div className="section-customize">
+              <Link to={ROUTE.SPECIALTY} className="section-customize__link">
+                <div className="section-customize__image">
+                  <img src={coXuongKhop} alt="" />
                 </div>
-                <div className="section-customize__title">Cơ xương khớp 1</div>
-              </div>
+                <h4 className="section-customize__title">Cơ xương khớp 1</h4>
+              </Link>
             </div>
-            <div className="section-customize-wrap">
-              <div className="section-customize">
-                <div className="bg-image-wrap">
-                  <div className="bg-image section-specialty"></div>
+            <div className="section-customize">
+              <Link to={ROUTE.SPECIALTY} className="section-customize__link">
+                <div className="section-customize__image">
+                  <img src={coXuongKhop} alt="" />
                 </div>
-                <div className="section-customize__title">Cơ xương khớp 1</div>
-              </div>
+                <h4 className="section-customize__title">Cơ xương khớp 1</h4>
+              </Link>
             </div>
-            <div className="section-customize-wrap">
-              <div className="section-customize">
-                <div className="bg-image-wrap">
-                  <div className="bg-image section-specialty"></div>
+            <div className="section-customize">
+              <Link to={ROUTE.SPECIALTY} className="section-customize__link">
+                <div className="section-customize__image">
+                  <img src={coXuongKhop} alt="" />
                 </div>
-                <div className="section-customize__title">Cơ xương khớp 1</div>
-              </div>
+                <h4 className="section-customize__title">Cơ xương khớp 1</h4>
+              </Link>
             </div>
-            <div className="section-customize-wrap">
-              <div className="section-customize">
-                <div className="bg-image-wrap">
-                  <div className="bg-image section-specialty"></div>
+            <div className="section-customize">
+              <Link to={ROUTE.SPECIALTY} className="section-customize__link">
+                <div className="section-customize__image">
+                  <img src={coXuongKhop} alt="" />
                 </div>
-                <div className="section-customize__title">Cơ xương khớp 1</div>
-              </div>
+                <h4 className="section-customize__title">Cơ xương khớp 1</h4>
+              </Link>
             </div>
-            <div className="section-customize-wrap">
-              <div className="section-customize">
-                <div className="bg-image-wrap">
-                  <div className="bg-image section-specialty"></div>
+            <div className="section-customize">
+              <Link to={ROUTE.SPECIALTY} className="section-customize__link">
+                <div className="section-customize__image">
+                  <img src={coXuongKhop} alt="" />
                 </div>
-                <div className="section-customize__title">Cơ xương khớp 1</div>
-              </div>
+                <h4 className="section-customize__title">Cơ xương khớp 1</h4>
+              </Link>
             </div>
           </Slider>
         </div>

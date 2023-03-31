@@ -1,21 +1,33 @@
 .section-share.section-outstanding-doctor {
   background-color: #fff;
   .section-body {
-    .section-customize-wrap {
-      .section-customize {
+    .section-customize {
+      .section-customize__link {
         border: 1px solid orange;
-        .bg-image-wrap {
-          margin-top: 10px;
-          height: 130px;
-          .bg-image {
-            width: 130px;
-            height: 130px;
-            background-image: url("../../../../assets/outstanding-doctor/bac-si-1.jpg");
+        display: block;
+        padding: 5%;
+        text-align: center;
+        .section-customize__image {
+          width: 100%;
+          padding-top: 70%;
+          position: relative;
+          img {
+            width: 60%;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
             border-radius: 50%;
           }
         }
-        .section-customize__title {
-          text-align: center;
+        .section-customize__description {
+          color: #111;
+          font-size: 12px;
+        }
+        &:hover {
+          .section-customize__description {
+            color: #45c3d2;
+          }
         }
       }
     }

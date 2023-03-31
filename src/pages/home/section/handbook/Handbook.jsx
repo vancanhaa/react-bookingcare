@@ -1,7 +1,9 @@
 import React from "react";
 import Slider from "react-slick";
 import "./handbook.scss";
-
+import { Link } from "react-router-dom";
+import { ROUTE } from "../../../../constants/route.constant";
+import handbook from "../../../../assets/handbook/handbook.jpg";
 function Handbook({ settings }) {
   return (
     <div className="section-share section-handbook">
@@ -12,85 +14,85 @@ function Handbook({ settings }) {
         </div>
         <div className="section-body">
           <Slider {...settings}>
-            <div className="section-customize-wrap">
-              <div className="section-customize">
-                <div className="bg-image-wrap">
-                  <div className="bg-image section-handbook"></div>
+            <div className="section-customize">
+              <Link to={ROUTE.SPECIALTY} className="section-customize__link">
+                <div className="section-customize__image">
+                  <img src={handbook} alt="Hình ảnh cẩm nang" />
                 </div>
-                <div className="section-customize__title">
+                <h4 className="section-customize__title">
                   Tâm lý hôn nhân và gia đình
-                </div>
-              </div>
+                </h4>
+              </Link>
             </div>
-            <div className="section-customize-wrap">
-              <div className="section-customize">
-                <div className="bg-image-wrap">
-                  <div className="bg-image section-handbook"></div>
+            <div className="section-customize">
+              <Link to={ROUTE.SPECIALTY} className="section-customize__link">
+                <div className="section-customize__image">
+                  <img src={handbook} alt="Hình ảnh cẩm nang" />
                 </div>
-                <div className="section-customize__title">
+                <h4 className="section-customize__title">
                   Tâm lý hôn nhân và gia đình
+                </h4>
+              </Link>
+            </div>
+            <div className="section-customize">
+              <Link to={ROUTE.SPECIALTY} className="section-customize__link">
+                <div className="section-customize__image">
+                  <img src={handbook} alt="Hình ảnh cẩm nang" />
                 </div>
-              </div>
-            </div>{" "}
-            <div className="section-customize-wrap">
-              <div className="section-customize">
-                <div className="bg-image-wrap">
-                  <div className="bg-image section-handbook"></div>
-                </div>
-                <div className="section-customize__title">
+                <h4 className="section-customize__title">
                   Tâm lý hôn nhân và gia đình
+                </h4>
+              </Link>
+            </div>
+            <div className="section-customize">
+              <Link to={ROUTE.SPECIALTY} className="section-customize__link">
+                <div className="section-customize__image">
+                  <img src={handbook} alt="Hình ảnh cẩm nang" />
                 </div>
-              </div>
-            </div>{" "}
-            <div className="section-customize-wrap">
-              <div className="section-customize">
-                <div className="bg-image-wrap">
-                  <div className="bg-image section-handbook"></div>
-                </div>
-                <div className="section-customize__title">
+                <h4 className="section-customize__title">
                   Tâm lý hôn nhân và gia đình
+                </h4>
+              </Link>
+            </div>
+            <div className="section-customize">
+              <Link to={ROUTE.SPECIALTY} className="section-customize__link">
+                <div className="section-customize__image">
+                  <img src={handbook} alt="Hình ảnh cẩm nang" />
                 </div>
-              </div>
-            </div>{" "}
-            <div className="section-customize-wrap">
-              <div className="section-customize">
-                <div className="bg-image-wrap">
-                  <div className="bg-image section-handbook"></div>
-                </div>
-                <div className="section-customize__title">
+                <h4 className="section-customize__title">
                   Tâm lý hôn nhân và gia đình
+                </h4>
+              </Link>
+            </div>
+            <div className="section-customize">
+              <Link to={ROUTE.SPECIALTY} className="section-customize__link">
+                <div className="section-customize__image">
+                  <img src={handbook} alt="Hình ảnh cẩm nang" />
                 </div>
-              </div>
-            </div>{" "}
-            <div className="section-customize-wrap">
-              <div className="section-customize">
-                <div className="bg-image-wrap">
-                  <div className="bg-image section-handbook"></div>
-                </div>
-                <div className="section-customize__title">
+                <h4 className="section-customize__title">
                   Tâm lý hôn nhân và gia đình
+                </h4>
+              </Link>
+            </div>
+            <div className="section-customize">
+              <Link to={ROUTE.SPECIALTY} className="section-customize__link">
+                <div className="section-customize__image">
+                  <img src={handbook} alt="Hình ảnh cẩm nang" />
                 </div>
-              </div>
-            </div>{" "}
-            <div className="section-customize-wrap">
-              <div className="section-customize">
-                <div className="bg-image-wrap">
-                  <div className="bg-image section-handbook"></div>
-                </div>
-                <div className="section-customize__title">
+                <h4 className="section-customize__title">
                   Tâm lý hôn nhân và gia đình
+                </h4>
+              </Link>
+            </div>
+            <div className="section-customize">
+              <Link to={ROUTE.SPECIALTY} className="section-customize__link">
+                <div className="section-customize__image">
+                  <img src={handbook} alt="Hình ảnh cẩm nang" />
                 </div>
-              </div>
-            </div>{" "}
-            <div className="section-customize-wrap">
-              <div className="section-customize">
-                <div className="bg-image-wrap">
-                  <div className="bg-image section-handbook"></div>
-                </div>
-                <div className="section-customize__title">
+                <h4 className="section-customize__title">
                   Tâm lý hôn nhân và gia đình
-                </div>
-              </div>
+                </h4>
+              </Link>
             </div>
           </Slider>
         </div>

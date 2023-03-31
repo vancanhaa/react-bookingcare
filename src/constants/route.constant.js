@@ -4,4 +4,5 @@ export const ROUTE = {
   REGISTER: "/register",
   LOG_OUT: "/logout",
   SYSTEM: "/system",
+  SPECIALTY: "/specialty",
 };

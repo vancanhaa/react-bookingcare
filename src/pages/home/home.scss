@@ -36,47 +36,12 @@
 }
 
 .section-share {
-  height: 330px;
-
-  .section-body {
-    .section-customize-wrap {
-      position: relative;
-      height: 180px;
-      .section-customize {
-        width: 95%;
-        height: 100%;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        .bg-image-wrap {
-          width: 100%;
-          height: 150px;
-          position: relative;
-          .bg-image {
-            width: 100%;
-            height: 100%;
-            background-size: contain;
-            background-position: center center;
-            background-repeat: no-repeat;
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-          }
-        }
-        .section-customize__title {
-          margin-top: 10px;
-        }
-      }
-    }
-  }
   .section-container {
     margin: 0 100px;
     display: flex;
     flex-direction: column;
     .section-header {
-      height: 60px;
+      height: 30px;
       margin-bottom: 30px;
       padding-top: 30px;
       .title-section {
@@ -91,11 +56,40 @@
         display: block;
         background-color: #ebebeb;
         color: #000;
+        font-size: 12px;
         text-transform: uppercase;
         &:hover {
           color: #fff;
           background-color: #f7d800;
           cursor: pointer;
+        }
+      }
+    }
+    .section-body {
+      padding-bottom: 40px;
+      .section-customize {
+        display: block !important;
+        width: auto !important;
+        margin: 5px;
+        .section-customize__link {
+          text-decoration: none;
+          .section-customize__image {
+            width: 100%;
+            img {
+              width: 100%;
+            }
+          }
+          .section-customize__title {
+            margin: 10px 0 0 0;
+            color: #111;
+            font-weight: 400;
+            font-size: 14px;
+          }
+          &:hover {
+            .section-customize__title {
+              color: #45c3d2;
+            }
+          }
         }
       }
     }
