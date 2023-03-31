@@ -1,0 +1,38 @@
+.section-share.section-about {
+  .section-container {
+    .section-body {
+      display: flex;
+      .content-left {
+        iframe {
+          width: 648px;
+          height: 364px;
+          border: none;
+        }
+      }
+      .content-right {
+        ul {
+          list-style: none;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: space-between;
+          li {
+            display: block;
+            text-align: center;
+            padding: 5px;
+            min-width: 30%;
+            a {
+              display: block;
+              width: 100%;
+              height: 100%;
+              img {
+                height: 40px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

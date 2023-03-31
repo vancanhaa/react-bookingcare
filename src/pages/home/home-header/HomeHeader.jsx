@@ -24,73 +24,75 @@ function HomeHeader() {
   const language = useSelector((state) => state.app.language);
   return (
     <div className="home-header-container">
-      <div className="home-header-content">
-        <div className="left-content">
-          <FontAwesomeIcon icon={faBars} />
-          <img className="header-logo" src={logo} alt="logo"></img>
-        </div>
-        <div className="center-content">
-          <div className="child-content">
-            <div>
-              <b>
-                <FormattedMessage id="homeheader.speciality" />
-              </b>
+      <div className="home-header-content__wrap">
+        <div className="home-header-content">
+          <div className="left-content">
+            <FontAwesomeIcon icon={faBars} />
+            <img className="header-logo" src={logo} alt="logo"></img>
+          </div>
+          <div className="center-content">
+            <div className="child-content">
+              <div>
+                <b>
+                  <FormattedMessage id="homeheader.speciality" />
+                </b>
+              </div>
+              <div className="sub-title">
+                <FormattedMessage id="homeheader.search-doctor" />
+              </div>
             </div>
-            <div className="sub-title">
-              <FormattedMessage id="homeheader.search-doctor" />
+            <div className="child-content">
+              <div>
+                <b>
+                  <FormattedMessage id="homeheader.health-facility" />
+                </b>
+              </div>
+              <div className="sub-title">
+                <FormattedMessage id="homeheader.select-room" />
+              </div>
+            </div>
+            <div className="child-content">
+              <div>
+                <b>
+                  <FormattedMessage id="homeheader.doctor" />
+                </b>
+              </div>
+              <div className="sub-title">
+                <FormattedMessage id="homeheader.select-doctor" />
+              </div>
+            </div>
+            <div className="child-content">
+              <div>
+                <b>
+                  <FormattedMessage id="homeheader.fee" />
+                </b>
+              </div>
+              <div className="sub-title">
+                <FormattedMessage id="homeheader.check-health" />
+              </div>
             </div>
           </div>
-          <div className="child-content">
-            <div>
-              <b>
-                <FormattedMessage id="homeheader.health-facility" />
-              </b>
+          <div className="right-content">
+            <div className="support">
+              <FontAwesomeIcon icon={faCircleQuestion} />
+              <FormattedMessage id="homeheader.support" />
             </div>
-            <div className="sub-title">
-              <FormattedMessage id="homeheader.select-room" />
+            <div
+              className={
+                language === LANGUAGES.VI ? "language-vi active" : "language-vi"
+              }
+              onClick={() => dispatch(changeLanguage(LANGUAGES.VI))}
+            >
+              <b>VN</b>
             </div>
-          </div>
-          <div className="child-content">
-            <div>
-              <b>
-                <FormattedMessage id="homeheader.doctor" />
-              </b>
+            <div
+              className={
+                language === LANGUAGES.EN ? "language-en active" : "language-en"
+              }
+              onClick={() => dispatch(changeLanguage(LANGUAGES.EN))}
+            >
+              <b>EN</b>
             </div>
-            <div className="sub-title">
-              <FormattedMessage id="homeheader.select-doctor" />
-            </div>
-          </div>
-          <div className="child-content">
-            <div>
-              <b>
-                <FormattedMessage id="homeheader.fee" />
-              </b>
-            </div>
-            <div className="sub-title">
-              <FormattedMessage id="homeheader.check-health" />
-            </div>
-          </div>
-        </div>
-        <div className="right-content">
-          <div className="support">
-            <FontAwesomeIcon icon={faCircleQuestion} />
-            <FormattedMessage id="homeheader.support" />
-          </div>
-          <div
-            className={
-              language === LANGUAGES.VI ? "language-vi active" : "language-vi"
-            }
-            onClick={() => dispatch(changeLanguage(LANGUAGES.VI))}
-          >
-            <b>VN</b>
-          </div>
-          <div
-            className={
-              language === LANGUAGES.EN ? "language-en active" : "language-en"
-            }
-            onClick={() => dispatch(changeLanguage(LANGUAGES.EN))}
-          >
-            <b>EN</b>
           </div>
         </div>
       </div>

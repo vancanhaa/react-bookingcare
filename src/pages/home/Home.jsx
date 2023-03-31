@@ -7,6 +7,8 @@ import "slick-carousel/slick/slick-theme.css";
 import MedicalFacility from "./section/medical-facility/MedicalFacility";
 import OutstandingDoctor from "./section/outstanding-doctor/OutstandingDoctor";
 import Handbook from "./section/handbook/Handbook";
+import About from "./section/about/About";
+import HomeFooter from "./home-footer/HomeFooter";
 function Home() {
   const settings = {
     dots: false,
@@ -22,8 +24,8 @@ function Home() {
       <MedicalFacility settings={settings} />
       <OutstandingDoctor settings={settings} />
       <Handbook settings={settings} />
-
-      <div style={{ height: "300px" }}></div>
+      <About />
+      <HomeFooter />
     </div>
   );
 }
