@@ -72,6 +72,7 @@
     border-radius: 10px;
     background-clip: padding-box;
     min-width: 0px;
+    z-index: 99999;
   }
 
   .thumb-vertical {
@@ -79,5 +80,6 @@
     border-radius: 10px;
     background-clip: padding-box;
     min-height: 0px;
+    z-index: 99999;
   }
 }

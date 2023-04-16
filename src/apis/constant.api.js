@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const BASE_URL = "http://localhost:8000/api";
+export const BASE_URL = "http://localhost:9000/api";
 
 export const API = {
   get: (url) => axios.get(url),

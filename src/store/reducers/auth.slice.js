@@ -28,11 +28,12 @@ const authSlice = createSlice({
       set(userInfoResponse);
       state.userInfo = userInfoResponse;
       state.loading = false;
+      //notification login success
     });
-    builder.addCase(loginAction, (state, action) => {
+    builder.addCase(loginAction.rejected, (state, action) => {
       remove();
       state.loading = false;
-      ///notification login success
+      ///notification login fail
     });
 
     //register
